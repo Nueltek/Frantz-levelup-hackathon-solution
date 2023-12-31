@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Admin Dashboard Hackthon Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <!-- THIS PROJECT HAS BEEN HOSTED, TO SEE LIVE DEMO VISIT -- https://hackathon-6b87f.web.app THANK YOU  -->
+  <!-- THIS PROJECT HAS BEEN HOSTED, TO SEE LIVE DEMO VISIT -- https://hackathon-6b87f.web.app THANK YOU  -->
+  <!-- THIS PROJECT HAS BEEN HOSTED, TO SEE LIVE DEMO VISIT -- https://hackathon-6b87f.web.app THANK YOU  -->
+  <!-- THIS PROJECT HAS BEEN HOSTED, TO SEE LIVE DEMO VISIT -- https://hackathon-6b87f.web.app THANK YOU  -->
+
+  <body>
+    <header>
+      <nav role="navigation">
+        <a href="http://www.shopify.com">
+          <img
+            src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"
+            alt=" shopify brand logo"
+            class="logo desktop"
+          />
+        </a>
+
+        <!-- mobile logo -->
+        <a href="http://www.shopify.com" class="mobile">
+          <img
+            src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+            alt=" shopify brand logo"
+            class="logo"
+          />
+        </a>
+        <div class="search-container">
+          <img
+            src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/f716c11ad22d73b853d5e58800989a5e5052f679/SearchMinor.svg"
+            alt="Search"
+            class="search-icon"
+          />
+          <input type="text" class="search-input" placeholder="Search" />
+        </div>
+        <div class="indicators">
+          <img
+            tabindex="0"
+            src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/9f90861bc68b1598e1bd1796c2ef393bd172898f/Icons.svg"
+            alt="bell for notifications"
+            class="bell"
+            role="button"
+            aria-label="bell icon for notifications"
+          />
+          <p tabindex="0" class="user"><span>DC</span></p>
+        </div>
+      </nav>
+
+      <!-- alert notification and user dropdown menu  -->
+      <!-- BELL NOTIFICATION -->
+      <div class="alerts hide">
+        <div class="notification">
+          <h6>Alerts</h6>
+          <img
+            src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/a65a526147e6da58fcd3693e0da9f0cd62653420/FilterMajor.svg"
+            alt="notification channel"
+            class="alert--icon"
+          />
+          <img
+            src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/a65a526147e6da58fcd3693e0da9f0cd62653420/CircleTickMajor.svg"
+            alt="Alert icon"
+            class="alert--icon"
+          />
+        </div>
+        <div class="message">
+          <p class="alert--message">
+            Alerts about your store and account will show here
+          </p>
+        </div>
+      </div>
+
+      <!-- USER DROPDOWN MENU -->
+      <div class="user--dropdown__menu hide">
+        <div class="user--dropdown__menu--header">
+          <h6><span>DC</span> Davii Collections</h6>
+          <img
+            src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/8a491c5c6ec648b14518e6c6b2e83b4d6b508a29/check.svg"
+            alt="check icon"
+            class="check"
+          />
+        </div>
+        <div class="user--dropdown__menu--store">
+          <img
+            tabindex="0"
+            src="https://crushingit.tech/hackathon-assets/icon-store.svg"
+            alt="store"
+            class="store"
+          />
+          <h6 tabindex="0">All stores</h6>
+        </div>
+
+        <div class="user--dropdown__menu--body">
+          <div class="user--dropdown__menu--body--item" role="navigation">
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#"> Changelog</a></li>
+              <li><a href="#">Community forums</a></li>
+              <li><a href="#"> Hire a Shopify Partner</a></li>
+              <li><a href="#"> Keyboard shortcuts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="user--dropdown__menu--footer">
+          <div class="user--dropdown__menu--footer--content">
+            <h6>David Micheal</h6>
+            <p>davidmichael@gmail.com</p>
+            <p class="user--dropdown__menu--footer--manage__acc">
+              <a href="#"> Manage account </a>
+            </p>
+            <p class="user--dropdown__menu--footer--logout">
+              <a href="#"> Log out </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- FOR SCREEN READERS, TO ENABLE THEM JUST SKIP TO THE REVEAL BTN FOR CONVINIENCE -->
+      <a
+        href="#main--1"
+        class="skip-to-content"
+        aria-label="Skip to main content"
+        >Skip to main content</a
+      >
+    </header>
+    <main>
+      <section class="dashboard" id="main--section">
+        <div class="select--plan">
+          <p>Extend your trial for $1/month for 3 months on select plans.</p>
+          <div class="btn">
+            <button class="select--btn">Select a plan</button>
+            <img
+              src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/87cb6a7ea688ae36ff2329300f68b9a2f779e7d4/close.svg"
+              alt="click to close this modal"
+              class="close--btn"
+              tabindex="0"
+              role="button"
+            />
+          </div>
+        </div>
+
+        <!-- Setup guide structure -->
+        <div class="setup--guide">
+          <div class="setup--guide__intro">
+            <div class="setup--guide__intro-content">
+              <div class="set">
+                <h5>Setup guide</h5>
+                <img
+                  id="main--1"
+                  tabindex="0"
+                  src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg"
+                  alt="click to see steps"
+                  class="reveal--btn"
+                  aria-label="reveal main content button"
+                  arial-collapes="false"
+                  role="button"
+                />
+              </div>
+              <p class="intro--text">
+                Use this personalized guide to get your store up and running.
+              </p>
+              <div class="intro--count__bar">
+                <p class="intro--counter">
+                  <span class="counter">0</span> / 5 completed
+                </p>
+                <div class="progress--container">
+                  <div class="progress--bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="setup--guide__steps hide">
+            <!-- step 1 -->
+            <div class="step--container active" id="step--container1">
+              <div class="setup--guide__step">
+                <img
+                  data-id="1"
+                  src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/648b7c9495d7fd1e40991383f4367511f49082e3/spinner.svg"
+                  alt="checkbox"
+                  class="spinner"
+                  tabindex="0"
+                  role="checkbox"
+                />
+                <p class="setup--guide__title" data-id="1" tabindex="0">
+                  Customize your online store
+                </p>
+              </div>
+              <div class="setup--details" id="setup--details1">
+                <div class="setup--guide__info">
+                  <p class="setup--guide__description" tabindex="0">
+                    Choose a theme and add your logo, colors, and images to
+                    reflect your brand. <br />
+                    <a href="#">Learn more</a>
+                  </p>
+                  <button class="setup--guide__btn">Customize theme</button>
+                </div>
+                <img
+                  src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                  alt="a paint brush with a color pallet"
+                  class="content--img"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+
+            <!-- step 2-->
+            <div class="step--container" id="step--container2">
+              <div class="setup--guide__step">
+                <img
+                  data-id="2"
+                  src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/648b7c9495d7fd1e40991383f4367511f49082e3/spinner.svg"
+                  alt="checkbox"
+                  class="spinner"
+                  tabindex="0"
+                  role="checkbox"
+                />
+                <p class="setup--guide__title me" data-id="2" tabindex="0">
+                  Add your first product
+                </p>
+              </div>
+              <div class="setup--details hide" id="setup--details2">
+                <div class="setup--guide__info">
+                  <p class="setup--guide__description" tabindex="0">
+                    Write a description, add photos, and set pricing for the
+                    products you plan to sell.
+                    <a href="#">Learn more</a>
+                  </p>
+                  <button class="setup--guide__btn">Add product</button>
+                  <button class="setup--guide__btn2">Import product</button>
+                </div>
+                <img
+                  src="https://crushingit.tech/hackathon-assets/product.png"
+                  alt="a t-shirt, a glass and a snickers grided in one frame"
+                  class="content--img"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+
+            <!-- step 3-->
+            <div class="step--container" id="step--container3">
+              <div class="setup--guide__step">
+                <img
+                  data-id="3"
+                  src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/648b7c9495d7fd1e40991383f4367511f49082e3/spinner.svg"
+                  alt="checkbox"
+                  class="spinner me"
+                  tabindex="0"
+                  role="checkbox"
+                />
+                <p class="setup--guide__title" data-id="3" tabindex="0">
+                  Add a custom domain
+                </p>
+              </div>
+              <div class="setup--details hide" id="setup--details3">
+                <div class="setup--guide__info">
+                  <p class="setup--guide__description" tabindex="0">
+                    Your current domain is 222219.myshopify.com but you can add
+                    a custom domainto help customers find your online store.
+
+                    <a href="#">Learn more</a>
+                  </p>
+                  <button class="setup--guide__btn">Add domain</button>
+                </div>
+                <img
+                  src="https://crushingit.tech/hackathon-assets/website.png"
+                  alt="an emoji representing the shape of planet earth with the letters www next to it "
+                  class="content--img"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+
+            <!-- step 4-->
+            <div class="step--container" id="step--container4">
+              <div class="setup--guide__step">
+                <img
+                  data-id="4"
+                  src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/648b7c9495d7fd1e40991383f4367511f49082e3/spinner.svg"
+                  alt="checkbox"
+                  class="spinner"
+                  tabindex="0"
+                  role="checkbox"
+                />
+                <p class="setup--guide__title" data-id="4" tabindex="0">
+                  Name your store
+                </p>
+              </div>
+              <div class="setup--details hide" id="setup--details4">
+                <div class="setup--guide__info">
+                  <p class="setup--guide__description" tabindex="0">
+                    Your temporary store name is currently Davii Collections.
+                    The store name appears in your admin and your online store.
+                    <br />
+                    <a href="#">Learn more</a>
+                  </p>
+                  <button class="setup--guide__btn">Name store</button>
+                </div>
+                <img
+                  src="https://crushingit.tech/hackathon-assets/name-store.png"
+                  alt=" a cartoon of a black man putting on a white t-shirt"
+                  class="content--img"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+
+            <!-- step 5-->
+            <div class="step--container" id="step--container5">
+              <div class="setup--guide__step">
+                <img
+                  data-id="5"
+                  src="https://raw.githubusercontent.com/Nueltek/levelup-hackathon/648b7c9495d7fd1e40991383f4367511f49082e3/spinner.svg"
+                  alt="checkbox"
+                  class="spinner"
+                  tabindex="0"
+                  role="checkbox"
+                />
+                <p class="setup--guide__title" data-id="5" tabindex="0">
+                  Set up a payment provider
+                </p>
+              </div>
+              <div class="setup--details hide" id="setup--details5">
+                <div class="setup--guide__info">
+                  <p class="setup--guide__description" tabindex="0">
+                    Choose a payment provider to start accepting payments.
+                    You’ll need to create an account with the payment provider
+                    and set it up with your Shopify store.
+                    <br />
+                    <a href="#">Learn more</a>
+                  </p>
+                  <button class="setup--guide__btn">Set up payment</button>
+                </div>
+                <img
+                  src="https://crushingit.tech/hackathon-assets/payment.png"
+                  alt="the visa and mastarcard logo"
+                  class="content--img"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
